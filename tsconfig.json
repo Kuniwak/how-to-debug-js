@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "module": "amd",
+        "target": "es6",
+        "noImplicitAny": true,
+        "noEmitOnError": true,
+        "noImplicitThis": true,
+        "strictNullChecks": true,
+        "outDir": "dist",
+        "rootDir": "src",
+        "sourceMap": false
+    },
+    "exclude": [
+        "node_modules",
+        "typings"
+    ]
+}

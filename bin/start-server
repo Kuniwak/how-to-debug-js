@@ -1,0 +1,11 @@
+#!/usr/bin/env node
+
+const createServer = require('../e2e/server');
+const server = createServer();
+const port = Number(process.env.PORT) || 8080;
+const hostname = process.env.HOST || 'localhost';
+
+server.start(port, hostname)
+  .then(() => {
+    console.log(`http://${hostname}:${port}/public にブラウザでアクセスしてください`);
+  });
